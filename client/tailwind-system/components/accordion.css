@@ -1,0 +1,36 @@
+@layer components {
+  .gc-accordion {
+    @apply w-full flex flex-col;
+  }
+
+  .gc-accordion-item {
+    @apply border-b border-border;
+  }
+
+  .gc-accordion-header {
+    @apply w-full flex items-center justify-between
+           py-3 px-2 cursor-pointer select-none
+           text-text hover:bg-muted/10 transition-colors;
+  }
+
+  .gc-accordion-title {
+    @apply text-base font-medium;
+  }
+
+  .gc-accordion-icon {
+    @apply transition-transform duration-200;
+  }
+
+  .gc-accordion-icon-open {
+    @apply rotate-90;
+  }
+
+  .gc-accordion-panel {
+    @apply overflow-hidden transition-all duration-300;
+    max-height: 0; /* critical */
+  }
+
+  .gc-accordion-inner {
+    @apply px-2 pb-3 text-muted;
+  }
+}

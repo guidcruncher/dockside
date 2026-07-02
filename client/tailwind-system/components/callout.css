@@ -1,0 +1,38 @@
+@layer components {
+  .gc-callout {
+    @apply rounded-lg p-4 border flex gap-3;
+  }
+
+  .gc-callout-title {
+    @apply font-semibold text-base;
+  }
+
+  .gc-callout-body {
+    @apply text-sm leading-relaxed;
+  }
+
+  .gc-callout-icon {
+    @apply w-5 h-5 shrink-0 mt-0.5;
+  }
+
+  /* Variants */
+  .gc-callout-info {
+    @apply bg-info-soft border-info text-info-foreground;
+  }
+
+  .gc-callout-success {
+    @apply bg-success-soft border-success text-success-foreground;
+  }
+
+  .gc-callout-warning {
+    @apply bg-warning-soft border-warning text-warning-foreground;
+  }
+
+  .gc-callout-danger {
+    @apply bg-danger-soft border-danger text-danger-foreground;
+  }
+
+  .gc-callout-muted {
+    @apply bg-muted-soft border-muted text-muted-foreground;
+  }
+}

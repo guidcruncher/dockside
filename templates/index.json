@@ -1,0 +1,14 @@
+{
+  "pihole": {
+    "name": "﻿Pi-hole, Network-wide Ad Blocking.",
+    "version": 1
+  },
+  "adguardhome": {
+    "name": "﻿AdGuard Home",
+    "version": 1
+  },
+  "viox": {
+    "name": "﻿VIOX Music Player server",
+    "version": 1
+  }
+}

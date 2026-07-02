@@ -1,0 +1,21 @@
+@layer components {
+  .gc-alert {
+    @apply rounded-lg p-4 flex gap-3 items-start border;
+  }
+
+  .gc-alert-success {
+    @apply bg-success-soft border-success text-success-foreground;
+  }
+
+  .gc-alert-danger {
+    @apply bg-danger-soft border-danger text-danger-foreground;
+  }
+
+  .gc-alert-warning {
+    @apply bg-warning-soft border-warning text-warning-foreground;
+  }
+
+  .gc-alert-info {
+    @apply bg-info-soft border-info text-info-foreground;
+  }
+}

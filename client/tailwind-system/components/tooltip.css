@@ -1,0 +1,15 @@
+@layer components {
+  .gc-tooltip {
+    @apply relative inline-block;
+  }
+
+  .gc-tooltip:hover .gc-tooltip-content {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .gc-tooltip-content {
+    @apply absolute left-1/2 -translate-x-1/2 -translate-y-2
+           opacity-0 pointer-events-none transition-all duration-150
+           bg-surface text-text border border-border rounded-md px-2 py-1 text-xs shadow;
+  }
+}

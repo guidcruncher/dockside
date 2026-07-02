@@ -1,0 +1,27 @@
+@layer components {
+  .gc-pagination {
+    @apply flex items-center gap-2 text-sm;
+  }
+
+  .gc-pagination-list {
+    @apply inline-flex items-center gap-1;
+  }
+
+  .gc-page-btn {
+    @apply min-w-8 h-8 px-2 inline-flex items-center justify-center
+           rounded-md border border-border bg-surface text-text
+           hover:bg-muted/10 cursor-pointer text-sm;
+  }
+
+  .gc-page-btn-active {
+    @apply bg-primary text-white border-primary;
+  }
+
+  .gc-page-btn-disabled {
+    @apply opacity-40 cursor-not-allowed hover:bg-surface;
+  }
+
+  .gc-page-ellipsis {
+    @apply px-2 text-muted;
+  }
+}

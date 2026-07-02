@@ -1,0 +1,69 @@
+html,
+body {
+  overscroll-behavior-y: none;
+  background: transparent;
+}
+
+:root {
+  --gc-bg: 248 250 252;
+  --gc-surface: 255 255 255;
+  --gc-border: 226 232 240;
+  --gc-text: 15 23 42;
+  --gc-muted: 100 116 139;
+  --gc-primary: 59 130 246;
+
+  --gc-navbar-bg: 59 130 246;
+  --gc-navbar-text: 241 245 249;
+
+  --gc-success: 22 163 74;
+  --gc-success-foreground: 22 101 52; /* dark green */
+  --gc-success-soft: 220 252 231;
+
+  --gc-danger: 220 38 38;
+  --gc-danger-foreground: 153 27 27; /* dark red */
+  --gc-danger-soft: 254 226 226;
+
+  --gc-warning: 234 179 8;
+  --gc-warning-foreground: 133 77 14; /* dark amber */
+  --gc-warning-soft: 254 249 195;
+
+  --gc-info: 59 130 246;
+  --gc-info-foreground: 30 64 175; /* dark blue */
+  --gc-info-soft: 219 234 254;
+
+  --gc-muted: 100 116 139; /* already exists */
+  --gc-muted-soft: 241 245 249; /* light gray tint */
+  --gc-muted-foreground: 15 23 42; /* dark text */
+}
+
+[data-theme="dark"] {
+  --gc-bg: 15 23 42;
+  --gc-surface: 30 41 59;
+  --gc-border: 51 65 85;
+  --gc-text: 241 245 249;
+  --gc-muted: 148 163 184;
+  --gc-primary: 96 165 250;
+
+  --gc-navbar-bg: 96 165 250;
+  --gc-navbar-text: 15 23 42;
+
+  --gc-success: 22 163 74;
+  --gc-success-foreground: 255 255 255;
+  --gc-success-soft: 20 83 45;
+
+  --gc-danger: 220 38 38;
+  --gc-danger-foreground: 255 255 255;
+  --gc-danger-soft: 69 10 10;
+
+  --gc-warning: 234 179 8;
+  --gc-warning-foreground: 255 255 255;
+  --gc-warning-soft: 66 32 6;
+
+  --gc-info: 59 130 246;
+  --gc-info-foreground: 255 255 255;
+  --gc-info-soft: 30 58 138;
+
+  --gc-muted: 148 163 184;
+  --gc-muted-soft: 30 41 59; /* dark tint */
+  --gc-muted-foreground: 241 245 249; /* light text */
+}

@@ -1,0 +1,15 @@
+workspace:
+  folder: "${HOME}/compose-projects"
+
+templates:
+  folder: "${HOME}/compose-templates"
+
+server:
+  host: "0.0.0.0"
+  port: 5172
+  baseUrl: "http://192.168.1.202:5173"
+  logLevel: "info"
+
+ghcr:
+  personalAccessToken: "${GHCR_PAT}"
+  username: "${GHCR_USERNAME}"

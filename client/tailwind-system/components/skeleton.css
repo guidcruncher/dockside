@@ -1,0 +1,5 @@
+@layer components {
+  .gc-skeleton {
+    @apply animate-pulse bg-muted/20 rounded-md;
+  }
+}

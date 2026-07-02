@@ -1,0 +1,33 @@
+.gc-btn {
+  @apply inline-flex items-center justify-center rounded-md font-medium
+         transition-colors duration-150 px-3 py-2 text-sm
+         border border-border;
+}
+
+.gc-btn-surface {
+  @apply gc-btn bg-surface text-text border border-border hover:bg-surface/80;
+}
+
+.gc-btn-primary {
+  @apply gc-btn bg-primary text-white hover:bg-primary/90;
+}
+
+.gc-btn-muted {
+  @apply gc-btn bg-muted text-white hover:bg-muted/90;
+}
+
+.gc-btn-warning {
+  @apply gc-btn bg-warning text-white hover:bg-warning/90;
+}
+
+.gc-btn-success {
+  @apply gc-btn bg-success text-white hover:bg-success/90;
+}
+
+.gc-btn-info {
+  @apply gc-btn bg-info text-white hover:bg-info/90;
+}
+
+.gc-btn-danger {
+  @apply gc-btn bg-danger text-white hover:bg-danger/90;
+}

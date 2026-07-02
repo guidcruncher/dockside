@@ -1,0 +1,22 @@
+@layer components {
+  .gc-switch {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors;
+  }
+
+  .gc-switch-track {
+    @apply absolute inset-0 rounded-full bg-muted-soft transition-colors;
+  }
+
+  .gc-switch-thumb {
+    @apply h-5 w-5 rounded-full bg-muted shadow transform transition-transform;
+  }
+
+  /* ON state */
+  .gc-switch-on .gc-switch-track {
+    @apply bg-primary/30;
+  }
+
+  .gc-switch-on .gc-switch-thumb {
+    @apply translate-x-5 bg-primary;
+  }
+}

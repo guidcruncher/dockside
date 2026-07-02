@@ -1,0 +1,53 @@
+@layer components {
+  /* ROOT */
+  .gc-dropdown {
+    @apply relative inline-block text-left;
+  }
+
+  /* TRIGGER */
+  .gc-dropdown-trigger {
+    @apply gc-btn;
+  }
+
+  /* PANEL */
+  .gc-dropdown-menu {
+    @apply absolute right-0 mt-2 w-48
+           bg-surface border border-border
+           rounded-md shadow-soft py-1 z-50
+           transition-all duration-150
+           origin-top-right;
+  }
+
+  /* ITEM */
+  .gc-dropdown-item {
+    @apply px-3 py-2 text-sm text-text cursor-pointer
+           hover:bg-muted/10
+           transition-colors;
+  }
+
+  /* DANGER ITEM */
+  .gc-dropdown-item-danger {
+    @apply text-danger hover:bg-danger/10;
+  }
+
+  /* DIVIDER */
+  .gc-dropdown-divider {
+    @apply my-1 border-t border-border;
+  }
+
+  /* TRANSITIONS (Vue-compatible) */
+  .gc-dropdown-enter-from,
+  .gc-dropdown-leave-to {
+    @apply opacity-0 scale-95;
+  }
+
+  .gc-dropdown-enter-to,
+  .gc-dropdown-leave-from {
+    @apply opacity-100 scale-100;
+  }
+
+  .gc-dropdown-enter-active,
+  .gc-dropdown-leave-active {
+    @apply transition-all duration-150;
+  }
+}

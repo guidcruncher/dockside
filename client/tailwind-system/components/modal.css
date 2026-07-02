@@ -1,0 +1,28 @@
+@layer components {
+  .gc-modal-backdrop {
+    @apply fixed inset-0 bg-black/40 backdrop-blur-sm
+           flex items-center justify-center z-50;
+  }
+
+  .gc-modal-panel {
+    @apply bg-surface border border-border rounded-lg shadow-soft
+           w-full max-w-lg p-6 relative z-50
+           transition-all duration-200;
+  }
+
+  .gc-modal-enter {
+    @apply opacity-0 scale-95;
+  }
+
+  .gc-modal-enter-active {
+    @apply opacity-100 scale-100;
+  }
+
+  .gc-modal-leave {
+    @apply opacity-100 scale-100;
+  }
+
+  .gc-modal-leave-active {
+    @apply opacity-0 scale-95;
+  }
+}

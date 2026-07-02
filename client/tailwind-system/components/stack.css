@@ -1,0 +1,21 @@
+@layer components {
+  .gc-stack {
+    @apply flex flex-col;
+  }
+
+  .gc-stack-xs > * + * {
+    @apply mt-1;
+  }
+  .gc-stack-sm > * + * {
+    @apply mt-2;
+  }
+  .gc-stack-md > * + * {
+    @apply mt-4;
+  }
+  .gc-stack-lg > * + * {
+    @apply mt-6;
+  }
+  .gc-stack-xl > * + * {
+    @apply mt-8;
+  }
+}

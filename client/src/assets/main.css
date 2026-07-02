@@ -1,0 +1,8 @@
+/* 1. All imports must come first */
+@import "../../tailwind-system/tokens.css";
+@import "../../tailwind-system/components.css";
+
+/* 2. Now Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
