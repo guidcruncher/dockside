@@ -1,0 +1,27 @@
+@layer components {
+  .gc-input {
+    @apply w-full rounded-md border border-border bg-bg
+           px-3 py-2 text-body text-text
+           placeholder:text-muted/70
+           focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary
+           disabled:bg-bg/60 disabled:text-muted disabled:cursor-not-allowed
+           transition-colors duration-150;
+  }
+
+  .gc-textarea {
+    @apply w-full rounded-md border border-border bg-bg
+           px-3 py-2 text-body text-text min-h-[120px]
+           placeholder:text-muted/70
+           focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary
+           disabled:bg-bg/60 disabled:text-muted disabled:cursor-not-allowed
+           transition-colors duration-150;
+  }
+
+  .gc-select {
+    @apply w-full rounded-md border border-border bg-bg
+           px-3 py-2 text-body text-text
+           focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary
+           disabled:bg-bg/60 disabled:text-muted disabled:cursor-not-allowed
+           transition-colors duration-150;
+  }
+}

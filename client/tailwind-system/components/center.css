@@ -1,0 +1,25 @@
+@layer components {
+  .gc-center-overlay {
+    @apply fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-end z-[9998];
+  }
+
+  .gc-center-panel {
+    @apply w-96 h-full bg-surface border-l border-border shadow-2xl flex flex-col;
+  }
+
+  .gc-center-header {
+    @apply flex justify-between items-center px-4 py-4 border-b border-border text-text;
+  }
+
+  .gc-center-list {
+    @apply flex-1 overflow-y-auto;
+  }
+
+  .gc-center-item {
+    @apply px-4 py-4 border-b border-border;
+  }
+
+  .gc-center-empty {
+    @apply text-center text-muted py-6;
+  }
+}

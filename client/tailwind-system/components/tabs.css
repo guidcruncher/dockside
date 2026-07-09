@@ -1,0 +1,13 @@
+@layer components {
+  .gc-tabs {
+    @apply w-full;
+  }
+
+  .gc-tab-list {
+    @apply flex gap-2 border-b border-border;
+  }
+
+  .gc-tab-panel {
+    @apply py-4;
+  }
+}

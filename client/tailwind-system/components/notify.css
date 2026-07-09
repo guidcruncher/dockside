@@ -1,0 +1,45 @@
+@layer components {
+  .gc-notify-button {
+    @apply relative p-2 rounded hover:bg-muted/10 text-text;
+  }
+
+  .gc-notify-dot {
+    @apply absolute top-1 right-1 w-2 h-2 bg-danger rounded-full;
+  }
+
+  .gc-notify-flyout {
+    @apply absolute right-0 mt-2 w-80 bg-surface border border-border rounded-xl shadow-xl z-[9999];
+  }
+
+  .gc-notify-header {
+    @apply flex justify-between items-center px-4 py-2 border-b border-border text-text;
+  }
+
+  .gc-notify-clear {
+    @apply text-sm text-primary hover:text-primary/80;
+  }
+
+  .gc-notify-list {
+    @apply max-h-96 overflow-y-auto;
+  }
+
+  .gc-notify-item {
+    @apply px-4 py-3 border-b border-border;
+  }
+
+  .gc-notify-unread {
+    @apply bg-muted/10;
+  }
+
+  .gc-notify-title {
+    @apply font-semibold text-text;
+  }
+
+  .gc-notify-message {
+    @apply text-muted text-sm;
+  }
+
+  .gc-notify-time {
+    @apply text-muted text-xs mt-1;
+  }
+}

@@ -1,0 +1,5 @@
+@layer components {
+  .gc-card {
+    @apply bg-surface border border-border/60 rounded-lg shadow p-4;
+  }
+}

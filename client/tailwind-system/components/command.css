@@ -1,0 +1,39 @@
+@layer components {
+  .gc-cmd-overlay {
+    @apply fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-start justify-center pt-24;
+  }
+
+  .gc-cmd-panel {
+    @apply w-full max-w-xl bg-surface border border-border rounded-lg shadow-soft p-4;
+  }
+
+  .gc-cmd-input {
+    @apply w-full px-3 py-2 border border-border rounded-md bg-bg text-text
+           focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .gc-cmd-list {
+    @apply mt-4 max-h-80 overflow-y-auto flex flex-col gap-1;
+  }
+
+  .gc-cmd-group-label {
+    @apply text-xs uppercase text-muted mt-3 mb-1 px-1;
+  }
+
+  .gc-cmd-item {
+    @apply flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer
+           hover:bg-muted/10 transition-colors text-text;
+  }
+
+  .gc-cmd-item-active {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .gc-cmd-item-icon {
+    @apply text-lg;
+  }
+
+  .gc-cmd-empty {
+    @apply text-center text-muted py-6;
+  }
+}

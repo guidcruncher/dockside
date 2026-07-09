@@ -1,0 +1,25 @@
+@layer components {
+  .gc-property-list {
+    @apply divide-y divide-border rounded-lg border border-border bg-surface;
+  }
+
+  .gc-property-row {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-2 p-4;
+  }
+
+  .gc-property-label {
+    @apply text-sm font-medium text-muted-foreground;
+  }
+
+  .gc-property-value {
+    @apply text-sm md:col-span-2 break-words;
+  }
+
+  .gc-property-actions {
+    @apply flex items-center gap-2 mt-2 md:mt-0;
+  }
+
+  .gc-property-copy {
+    @apply text-xs px-2 py-1 rounded bg-muted hover:bg-muted-soft transition;
+  }
+}

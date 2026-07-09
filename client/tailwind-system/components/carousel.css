@@ -1,0 +1,33 @@
+@layer components {
+  .gc-carousel {
+    @apply relative overflow-hidden w-full;
+  }
+
+  .gc-carousel-track {
+    @apply flex transition-transform duration-500 ease-out;
+  }
+
+  .gc-carousel-slide {
+    @apply shrink-0 w-full;
+  }
+
+  .gc-carousel-nav {
+    @apply absolute inset-0 flex items-center justify-between pointer-events-none;
+  }
+
+  .gc-carousel-btn {
+    @apply pointer-events-auto bg-black/40 text-white rounded-full p-2 hover:bg-black/60 transition;
+  }
+
+  .gc-carousel-dots {
+    @apply absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2;
+  }
+
+  .gc-carousel-dot {
+    @apply w-2 h-2 rounded-full bg-white/40 hover:bg-white/70 transition;
+  }
+
+  .gc-carousel-dot-active {
+    @apply bg-white;
+  }
+}

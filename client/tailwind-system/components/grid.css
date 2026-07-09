@@ -1,0 +1,90 @@
+@layer components {
+  .gc-grid {
+    @apply grid w-full;
+  }
+
+  /* Gap sizes */
+  .gc-grid-gap-xs {
+    @apply gap-2;
+  }
+  .gc-grid-gap-sm {
+    @apply gap-4;
+  }
+  .gc-grid-gap-md {
+    @apply gap-6;
+  }
+  .gc-grid-gap-lg {
+    @apply gap-8;
+  }
+  .gc-grid-gap-xl {
+    @apply gap-12;
+  }
+
+  /* Column presets */
+  .gc-grid-cols-1 {
+    @apply grid-cols-1;
+  }
+  .gc-grid-cols-2 {
+    @apply grid-cols-2;
+  }
+  .gc-grid-cols-3 {
+    @apply grid-cols-3;
+  }
+  .gc-grid-cols-4 {
+    @apply grid-cols-4;
+  }
+  .gc-grid-cols-6 {
+    @apply grid-cols-6;
+  }
+  .gc-grid-cols-12 {
+    @apply grid-cols-12;
+  }
+
+  /* Responsive helpers */
+  @screen sm {
+    .gc-grid-sm-2 {
+      @apply sm:grid-cols-2;
+    }
+    .gc-grid-sm-3 {
+      @apply sm:grid-cols-3;
+    }
+    .gc-grid-sm-4 {
+      @apply sm:grid-cols-4;
+    }
+  }
+
+  @screen md {
+    .gc-grid-md-2 {
+      @apply md:grid-cols-2;
+    }
+    .gc-grid-md-3 {
+      @apply md:grid-cols-3;
+    }
+    .gc-grid-md-4 {
+      @apply md:grid-cols-4;
+    }
+  }
+
+  @screen lg {
+    .gc-grid-lg-3 {
+      @apply lg:grid-cols-3;
+    }
+    .gc-grid-lg-4 {
+      @apply lg:grid-cols-4;
+    }
+    .gc-grid-lg-6 {
+      @apply lg:grid-cols-6;
+    }
+  }
+
+  /* Alignment */
+  .gc-grid-center {
+    @apply place-items-center;
+  }
+  .gc-grid-start {
+    @apply place-items-start;
+  }
+  .gc-grid-end {
+    @apply place-items-end;
+  }
+}

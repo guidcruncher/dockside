@@ -1,0 +1,36 @@
+@layer components {
+  .gc-section {
+    @apply w-full py-12;
+  }
+
+  /* Padding sizes */
+  .gc-section-xs {
+    @apply py-4;
+  }
+  .gc-section-sm {
+    @apply py-8;
+  }
+  .gc-section-md {
+    @apply py-12;
+  }
+  .gc-section-lg {
+    @apply py-16;
+  }
+  .gc-section-xl {
+    @apply py-24;
+  }
+
+  /* Background variants */
+  .gc-section-bg-default {
+    @apply bg-bg;
+  }
+  .gc-section-bg-surface {
+    @apply bg-surface;
+  }
+  .gc-section-bg-muted {
+    @apply bg-muted/10;
+  }
+  .gc-section-bg-primary {
+    @apply bg-primary/10;
+  }
+}

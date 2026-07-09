@@ -1,0 +1,6 @@
+.gc-gauge,
+.gc-semi-gauge,
+.gc-radial-gauge,
+.gc-multi-gauge {
+  @apply transition-colors duration-300 ease-linear;
+}

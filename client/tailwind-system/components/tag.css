@@ -1,0 +1,25 @@
+@layer components {
+  .gc-tag {
+    @apply inline-flex items-center gap-1 text-sm font-medium;
+  }
+
+  .gc-tag-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .gc-tag-success .gc-tag-dot {
+    @apply bg-success;
+  }
+
+  .gc-tag-danger .gc-tag-dot {
+    @apply bg-danger;
+  }
+
+  .gc-tag-warning .gc-tag-dot {
+    @apply bg-warning;
+  }
+
+  .gc-tag-info .gc-tag-dot {
+    @apply bg-info;
+  }
+}

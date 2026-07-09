@@ -1,0 +1,37 @@
+@layer components {
+  .gc-table-wrapper {
+    @apply w-full overflow-auto border border-border rounded-lg bg-surface;
+  }
+
+  .gc-table {
+    @apply w-full border-collapse text-sm;
+  }
+
+  .gc-th {
+    @apply text-left font-semibold px-4 py-3 border-b border-border bg-muted/20;
+  }
+
+  .gc-th-sortable {
+    @apply cursor-pointer select-none hover:bg-muted/30;
+  }
+
+  .gc-td {
+    @apply px-4 py-3 border-b border-border;
+  }
+
+  .gc-tr-hover:hover {
+    @apply bg-muted/10;
+  }
+
+  .gc-checkbox-cell {
+    @apply w-10 text-center;
+  }
+
+  .gc-sort-indicator {
+    @apply inline-block ml-1 text-muted;
+  }
+
+  .gc-table-empty {
+    @apply text-center text-muted py-10;
+  }
+}

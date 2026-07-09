@@ -1,0 +1,23 @@
+workspace:
+  folder: "${DOCKER_SYSTEM}"
+
+templates:
+  folder: "${HOME}/compose-templates"
+  portainer:
+    cache: "${HOME}/compose-templates/portainer-templates.json"
+    url: "https://raw.githubusercontent.com/lissy93/portainer-templates/refs/heads/main/templates.json"
+
+server:
+  host: "0.0.0.0"
+  port: 5172
+  baseUrl: "http://192.168.1.202:5173"
+  logLevel: "info"
+
+ghcr:
+  personalAccessToken: "${GHCR_PAT}"
+  username: "${GHCR_USERNAME}"
+
+proxy:
+  configFolder: "${DOCKER_SYSTEM}/caddy/generated-config"
+  container: "caddy"
+  useImports: true

@@ -1,0 +1,47 @@
+@layer components {
+  .gc-toast-container {
+    @apply fixed top-16 right-4 z-50 flex flex-col gap-3;
+  }
+
+  .gc-toast {
+    @apply min-w-[240px] max-w-sm px-4 py-3 rounded-md shadow-soft
+           border border-border bg-surface/80 backdrop-blur-sm text-text
+           flex items-start gap-3;
+  }
+
+  .gc-toast-success {
+    @apply border-success text-success bg-success/10;
+  }
+
+  .gc-toast-error {
+    @apply border-danger text-danger bg-danger/10;
+  }
+
+  .gc-toast-warning {
+    @apply border-warning text-warning bg-warning/10;
+  }
+
+  .gc-toast-info {
+    @apply border-primary text-primary bg-primary/10;
+  }
+
+  .gc-toast-close {
+    @apply ml-auto text-muted hover:text-text cursor-pointer;
+  }
+
+  .gc-toast-enter {
+    @apply opacity-0 translate-x-4;
+  }
+
+  .gc-toast-enter-active {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .gc-toast-leave {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .gc-toast-leave-active {
+    @apply opacity-0 translate-x-4;
+  }
+}

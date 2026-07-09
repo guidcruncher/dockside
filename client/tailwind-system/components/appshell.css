@@ -1,0 +1,25 @@
+@layer components {
+  .gc-appshell {
+    @apply w-screen h-screen flex flex-col bg-bg text-text overflow-hidden;
+  }
+
+  .gc-appshell-navbar {
+    @apply h-14 flex items-center px-4 border-b border-border bg-navbar-bg text-navbar-text shrink-0 z-10;
+  }
+
+  .gc-navbar-left {
+    @apply flex items-center mr-auto;
+  }
+
+  .gc-navbar-right {
+    @apply flex items-center ml-auto;
+  }
+
+  .gc-appshell-content {
+    @apply flex-1 overflow-y-auto;
+  }
+
+  .gc-appshell-content-inner {
+    @apply min-w-full w-fit pt-6 pr-6 pb-6 pl-0;
+  }
+}

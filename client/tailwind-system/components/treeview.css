@@ -1,0 +1,33 @@
+@layer components {
+  .gc-tree {
+    @apply flex flex-col gap-1;
+  }
+
+  .gc-tree-item {
+    @apply flex items-start gap-2 cursor-pointer select-none px-2 py-1 rounded;
+  }
+
+  .gc-tree-item:hover {
+    @apply bg-muted-soft;
+  }
+
+  .gc-tree-item-active {
+    @apply bg-primary/10 text-primary font-medium;
+  }
+
+  .gc-tree-children {
+    @apply ml-5 border-l border-border pl-3 mt-1 flex flex-col gap-1;
+  }
+
+  .gc-tree-icon {
+    @apply w-4 h-4 mt-0.5 opacity-70;
+  }
+
+  .gc-tree-chevron {
+    @apply w-4 h-4 mt-0.5 transition-transform opacity-70;
+  }
+
+  .gc-tree-chevron-open {
+    @apply rotate-90;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "AdGuard Home",
+  "logo": "https://www.gravatar.com/avatar/c04ff98f88bc9d2cebbbd593e8174ddd?s=120&r=g&d=404",
+  "author": "Adguard Team",
+  "license": "",
+  "description": "﻿﻿Network-wide ads & trackers blocking DNS server",
+  "weburl": "https://adguard.com/",
+  "docsurl": "https://adguard-dns.io/kb/adguard-home/overview/",
+  "type": "application/x-yaml",
+  "raw": "services:\r\n  adguardhome:\r\n    container_name: adguardhome\r\n    restart: unless-stopped\r\n    volumes:\r\n      - \/my\/own\/workdir:\/opt\/adguardhome\/work\r\n      - \/my\/own\/confdir:\/opt\/adguardhome\/conf\r\n    ports:\r\n      - 53:53\/tcp\r\n      - 53:53\/udp\r\n      - 67:67\/udp\r\n      - 68:68\/udp\r\n      - 80:80\/tcp\r\n      - 443:443\/tcp\r\n      - 443:443\/udp\r\n      - 3000:3000\/tcp\r\n      - 853:853\/tcp\r\n      - 784:784\/udp\r\n      - 853:853\/udp\r\n      - 8853:8853\/udp\r\n      - 5443:5443\/tcp\r\n      - 5443:5443\/udp\r\n    image: adguard\/adguardhome"
+}
